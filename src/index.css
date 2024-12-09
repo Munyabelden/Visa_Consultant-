@@ -1,13 +1,134 @@
-body {
+*,
+*:after,
+*:before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url('./components/images/headerd-destop-bg\ \(2\).jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 15rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 14%;
+  background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.7));
+  z-index: 10000;
+}
+
+.primary-details,
+.primary-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #f8f5f1;
+}
+
+.primary-details li {
+  list-style: disc;
+}
+
+.primary-details {
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 25px;
+}
+
+.primary-nav {
+  padding-top: 20px;
+}
+
+.contact-btn {
+  padding: 10px 15px;
+  background-color: #070707;
+  color: #d1cfcc;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.nav-links li a {
+  color: #f8f5f1;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #926d3c;
+  text-decoration: underline;
+}
+
+.primary-info {
+  margin-left: 14%;
+  margin-top: 70px;
+}
+
+.primary-info .primary-paragraph {
+  font-size: 64px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.primary-paragraph span {
+  font-size: 72px;
+  font-weight: 900;
 }

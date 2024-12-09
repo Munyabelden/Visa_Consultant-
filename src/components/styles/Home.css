@@ -1,0 +1,57 @@
+.visa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 10rem;
+}
+
+.south-btn,
+.global-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.south-btn {
+  background-image: url('../images/south-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.global-btn {
+  background-image: url('../images/global-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+  
+.south-btn h2,
+.global-btn h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ebebeb;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(11, 42, 51, 0.7);
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
