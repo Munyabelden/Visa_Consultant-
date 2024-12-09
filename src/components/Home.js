@@ -1,4 +1,6 @@
 import './styles/Home.css';
+import Image1 from './images/home-about (2).jpg';
+import Images2 from './images/home-about (1).jpg';
 
 const Home = () => {
   return (
@@ -19,11 +21,12 @@ const Home = () => {
       </header>
       <section className="home-about">
         <div className="about-intro">
-          <h2>We are Visionary Visa Consultanting</h2>
-          <p>Welcome to Visionary Visa Consultant! We’re here to help make getting your visa simple, whether you’re traveling within South Africa or heading to exciting international destinations. From quick advice to handling the entire visa process, we’re all about making sure you’re ready for your next adventure. Let us take the stress out of the paperwork so you can focus on planning the fun stuff. Ready to explore the world? We've got your back!</p>
+          <h2>We are <br></br> <span>Visionary Visa Consultanting</span></h2>
+          <p>Welcome to Visionary Visa Consultanting! We’re here to help make getting your visa simple, whether you’re traveling within South Africa or heading to exciting international destinations. From quick advice to handling the entire visa process, we’re all about making sure you’re ready for your next adventure. Let us take the stress out of the paperwork so you can focus on planning the fun stuff. Ready to explore the world? We've got your back!</p>
         </div>
-        <div>
-          
+        <div className="home-about-imgs">
+          <img src={Image1} alt="beautiful waterfall" className="water-one"/>
+          <img src={Images2} alt="Beautiful bridge" className="water-two"/>
         </div>
       </section>
     </div>
