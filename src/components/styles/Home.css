@@ -122,3 +122,124 @@
   margin-top: 280px;
   box-shadow: 0 0 25px rgb(11, 42, 51);
 }
+
+/* Countries */
+.home-countries {
+  padding: 120px 18%;
+}
+
+.home-countries h2 {
+  color: #5e666c;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-block: 35px;
+}
+
+.country {
+  border-radius: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  transition: all 350ms ease-in-out;
+  -webkit-transition: all 350ms ease-in-out;
+  -moz-transition: all 350ms ease-in-out;
+  -ms-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out;
+}
+
+.country:hover {
+  box-shadow: 0 0 15px rgb(11, 42, 51);
+  background-position: center bottom;
+}
+
+.country div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 42, 51, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.country span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ebebeb;
+  margin-bottom: 15px;
+}
+
+.country-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(240, 243, 246, 0.3);
+  color: rgb(29, 45, 61);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.country-btn:hover {
+  background-color: #2980b9;
+}
+
+/* For tablets: 2 columns */
+@media (min-width: 768px) {
+  .countries {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For desktops: 3 columns */
+@media (min-width: 1024px) {
+  .countries {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.country.uk {
+  background-image: url('../images/uk.jpg');
+}
+
+.country.usa {
+  background-image: url('../images/USA.jpg');
+}
+
+.country.nz {
+  background-image: url('../images/NZ.jpg');
+}
+
+.country.fran {
+  background-image: url('../images/france.jpg');
+}
+
+.country.can {
+  background-image: url('../images/Canada.jpg');
+}
+
+.country.aust {
+  background-image: url('../images/Australia.jpg');
+}

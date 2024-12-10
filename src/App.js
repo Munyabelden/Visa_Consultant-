@@ -4,6 +4,7 @@ import NavBar from './components/Navbar'; // Adjust path as needed
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
+import Contact from './components/Contact';
 // import Contact from './components/Contact';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>
