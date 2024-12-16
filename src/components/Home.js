@@ -72,6 +72,24 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section>
+        <h2>South African Visa</h2>
+        <div>
+          <div>
+            
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   )
