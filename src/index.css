@@ -27,9 +27,10 @@ button {
   left: 0;
   background-image: url('./components/images/headerd-destop-bg\ \(2\).jpg');
   background-size: cover;
-  background-position: center;
+  background-position: left center;
   height: 100vh;
   padding-top: 15rem;
+  background-color: rgb(53, 93, 103)
 }
 
 nav {

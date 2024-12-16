@@ -1,0 +1,78 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background-color: rgb(5, 21, 26);
+  color: rgb(169, 175, 176);
+  padding: 70px 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.footer-about {
+  width: 50%;
+}
+
+.footer-about h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer span {
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.footer-contacts {
+  margin-bottom: 12px;
+}
+
+.footer-contacts div {
+  margin-bottom: 12px;
+}
+
+.footer-contacts a {
+  margin-right: 5px;
+  color: rgb(141, 143, 143);
+}
+
+.quick-links ul li {
+  margin-bottom: 8px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.quick-links ul li a {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  color: rgb(141, 143, 143);
+}
+
+.copyright {
+  width: 100%;
+  background-color: rgb(5, 21, 26);
+  color: rgb(169, 175, 176);
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  border-top: 1px solid rgb(141, 143, 143);
+}

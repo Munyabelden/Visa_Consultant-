@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import ContactForm from './Form';
 
 const Contact = () => {
@@ -22,6 +23,7 @@ const Contact = () => {
             <p>Need to renew your visa? We can help. Our team of visa experts is here to help you with all your visa needs. Whether you’re traveling within South Africa or heading to an international destination, we’ve got you covered.</p>
           </div>
         </div> */}
+        <Footer />
     </div>
   )
 }
