@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Popup from './Popup';
+import Form from './Form';
 // import './NavBar.css';
 
 const NavBar = () => {
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <nav className="navigation">
       <div className="primary-details">
@@ -15,7 +20,7 @@ const NavBar = () => {
         <span className="email">
           <strong>info@visionaryvisaconsultant.co.za</strong>
         </span>
-        <button className="contact-btn">Book an appointment</button>
+        <button className="contact-btn" onClick={ () => setIsPopupOpen(true)}>Book an appointment</button>
       </div>
 
       <div className="primary-nav">
@@ -29,6 +34,9 @@ const NavBar = () => {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
+      <Popup trigger={isPopupOpen} setTrigger={setIsPopupOpen}>
+        <Form />
+      </Popup>
     </nav>
   );
 };
