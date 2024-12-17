@@ -4,7 +4,7 @@ import Image1 from './images/home-about (2).jpg';
 import Images2 from './images/home-about (1).jpg';
 import Icon from './images/document_7025969.png';
 import Perm_Visa from './images/rb_90416.png';
-import Temp_Visa from './images/south-bg.jpg';
+import Temp_Visa from './images/14571632_5484708.jpg';
 
 const Home = () => {
   return (
@@ -78,21 +78,17 @@ const Home = () => {
       <section className="visa-classes">
         <h2>South African Visa Categories</h2>
         <p>At Visionary Visa Consultant, we take the complexity out of your immigration process, whether it's for personal or corporate purposes. Our experienced team handles all the intricate paperwork, ensuring your application is accurate and stress-free. From the initial consultation to the moment your permit is approved, we are with you every step of the way. You can focus on planning your exciting new life in South Africa, while we navigate the legal and administrative aspects for you. Trust us to make your immigration journey smooth and hassle-free.</p>
-        <div className="perm-visa">
-          <div>
-            <img src={Icon} alt="Document icon"/>
-            <p>Permanent Residence Permits</p>
-            <button>Permanent Residence Categories Here</button>
+        <div className="visa-categories">
+          <div className="perm-visa">
+              <img src={Perm_Visa} alt="Passport"/>
+              <p>Permanent Residence Permits</p>
+              <button>Permanent Residence Categories Here</button>
           </div>
-          <img src={Perm_Visa} alt="Passport"/>
-        </div>
-        <div className="temp-visa">
-          <div>
-            <img src={Icon} alt="Document icon"/>
+          <div className="temp-visa">
+            <img src={Temp_Visa} alt="SA Flag"/>
             <p>Temporary Residence Visa</p>
             <button>Temporary Residence Categories Here</button>
           </div>
-          <img src={Temp_Visa} alt="SA Flag"/>
         </div>
       </section>
       <Footer />
