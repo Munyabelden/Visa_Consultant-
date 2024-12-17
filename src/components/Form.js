@@ -8,7 +8,7 @@ const ContactForm = () => {
     phone: "",
     message: "",
   });
-  
+
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -56,54 +56,66 @@ const ContactForm = () => {
 
         {isSubmitted && <p className="success">Form submitted successfully!</p>}
 
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className={formErrors.name ? "invalid" : ""}
-          />
-          {formErrors.name && <p className="error">{formErrors.name}</p>}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className={formErrors.email ? "invalid" : ""}
-          />
-          {formErrors.email && <p className="error">{formErrors.email}</p>}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="phone">Phone</label>
-          <input
-            type="text"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className={formErrors.phone ? "invalid" : ""}
-          />
-          {formErrors.phone && <p className="error">{formErrors.phone}</p>}
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className={formErrors.message ? "invalid" : ""}
-          />
-          {formErrors.message && <p className="error">{formErrors.message}</p>}
-        </div>
-
-        <button type="submit">Submit</button>
+        <table className="form-table">
+          <tbody>
+            <tr>
+              <td><label htmlFor="name">Name</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className={formErrors.name ? "invalid" : ""}
+                />
+                {formErrors.name && <p className="error">{formErrors.name}</p>}
+              </td>
+            </tr>
+            <tr>
+              <td><label htmlFor="email">Email</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className={formErrors.email ? "invalid" : ""}
+                />
+                {formErrors.email && <p className="error">{formErrors.email}</p>}
+              </td>
+            </tr>
+            <tr>
+              <td><label htmlFor="phone">Phone</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={formErrors.phone ? "invalid" : ""}
+                />
+                {formErrors.phone && <p className="error">{formErrors.phone}</p>}
+              </td>
+            </tr>
+            <tr>
+              <td><label htmlFor="message">Message</label></td>
+              <td>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className={formErrors.message ? "invalid" : ""}
+                />
+                {formErrors.message && <p className="error">{formErrors.message}</p>}
+              </td>
+            </tr>
+            <tr>
+              <td colSpan="2" className="submit-row">
+                <button type="submit">Submit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </form>
     </div>
   );
