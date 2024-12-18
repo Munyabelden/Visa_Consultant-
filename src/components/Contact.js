@@ -5,24 +5,31 @@ const Contact = () => {
   return (
     <div>
         <ContactForm />
-        {/*         <div className="services-intro">
-          <h2>Our Services</h2>
-          <p>Our team of visa experts is here to help you with all your visa needs. Whether you’re traveling within South Africa or heading to an international destination, we’ve got you covered. From quick advice to handling the entire visa process, we’re here to make sure you’re ready for your next adventure. Let us take the stress out of the paperwork so you can focus on planning the fun stuff. Ready to explore the world? We've got your back!</p>
+        <div className="contact-section">
+          <h3>Contact Our Agents</h3>
+          <div className="agent-list">
+            <div className="agent-card">
+              <h4>Tatenda</h4>
+              <a href="mailto:tatenda862@gmail.com?subject=Inquiry&body=Visa Consultation Enquiry">
+                tatenda862@gmail.com
+              </a><br />
+              <a href="https://wa.me/+27720663578" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-whatsapp"></i>
+              </a>
+              <span>or call +27 72 066 3578</span>
+            </div>
+            <div className="agent-card">
+              <h4>Henry</h4>
+              <a href="mailto:your-email@example.com?subject=Inquiry&body=Visa Consultation Enquiry">
+                tatenda862@gmail.com
+              </a><br />
+              <a href="https://wa.me/+27 64 225 6536" target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-whatsapp"></i>
+              </a>
+              <span>or call +27 64 225 6536</span>
+            </div>
+          </div>
         </div>
-        <div className="services-list">
-          <div className="service">
-            <h3>Visa Applications</h3>
-            <p>Need help with your visa application? We’ve got you covered. Our team of visa experts is here to help you with all your visa needs. Whether you’re traveling within South Africa or heading to an international destination, we’ve got you covered.</p>
-          </div>
-          <div className="service">
-            <h3>Visa Consultations</h3>
-            <p>Not sure where to start with your visa application? We offer visa consultations to help you get started. Our team of visa experts is here to answer all your questions and guide you through the visa process.</p>
-          </div>
-          <div className="service">
-            <h3>Visa Renewals</h3>
-            <p>Need to renew your visa? We can help. Our team of visa experts is here to help you with all your visa needs. Whether you’re traveling within South Africa or heading to an international destination, we’ve got you covered.</p>
-          </div>
-        </div> */}
         <Footer />
     </div>
   )
