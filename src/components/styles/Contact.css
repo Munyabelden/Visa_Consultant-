@@ -1,0 +1,36 @@
+.contact-section {
+  margin-block: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.agent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.agent-card {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    margin-inline: 20%;
+  }
+
+  .agent-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .agent-card {
+    flex-direction: column;
+  }
+}
+  

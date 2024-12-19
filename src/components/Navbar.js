@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Popup from './Popup';
 import Form from './Form';
-// import './NavBar.css';
 
 const NavBar = () => {
 

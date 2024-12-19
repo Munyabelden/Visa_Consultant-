@@ -1,10 +1,15 @@
 import Footer from './Footer';
 import ContactForm from './Form';
+import './styles/Contact.css';
 
 const Contact = () => {
   return (
     <div>
-        <ContactForm />
+      <header className="header about">
+        <div className="primary-info">
+          <p className="primary-paragraph"><span>Contact Us</span></p>
+        </div>
+      </header>
         <div className="contact-section">
           <h3>Contact Our Agents</h3>
           <div className="agent-list">
@@ -30,6 +35,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <ContactForm />
         <Footer />
     </div>
   )
