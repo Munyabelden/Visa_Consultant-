@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import './styles/PermResidance.css';
+import SpouseIcon from './images/Spouse.png';
+import WorkIcon from './images/work.png';
+import RefugeeIcon from './images/Refugees.png';
+import BusinessIcon from './images/Business_icon.png';
+import FinanceIcon from './images/finance.png';
+import RelativeIcon from './images/Relative.png';
+import RetirementIcon from './images/retirement.png';
 
 const categories = [
-  { id: 1, name: 'Spouse', icon: './images/Spouse.png', description: 'Permanent residency for spouses of South African citizens or permanent residents.' },
-  { id: 2, name: 'Work', icon: './images/work.png', description: 'Permanent residency for individuals with work opportunities in South Africa.' },
-  { id: 3, name: 'Relative', icon: './images/Relative.png', description: 'For relatives of South African citizens or permanent residents.' },
-  { id: 4, name: 'Retirement', icon: './images/retirement.png', description: 'Permanent residency for retirees who want to settle in South Africa.' },
-  { id: 5, name: 'Business', icon: './images/Business.png', description: 'For individuals seeking to establish or invest in a business in South Africa.' },
-  { id: 6, name: 'Finance', icon: './images/finance.png', description: 'For individuals with sufficient financial resources to live in South Africa.' },
-  { id: 7, name: 'Refugee', icon: './images/Refugees.png', description: 'For individuals seeking permanent residency under refugee status.' }
+  { id: 1, name: 'Spouse', icon: SpouseIcon, description: 'Permanent residency for spouses of South African citizens or permanent residents.' },
+  { id: 2, name: 'Work', icon: WorkIcon, description: 'Permanent residency for individuals with work opportunities in South Africa.' },
+  { id: 3, name: 'Relative', icon: RelativeIcon, description: 'For relatives of South African citizens or permanent residents.' },
+  { id: 4, name: 'Retirement', icon: RetirementIcon, description: 'Permanent residency for retirees who want to settle in South Africa.' },
+  { id: 5, name: 'Business', icon: BusinessIcon, description: 'For individuals seeking to establish or invest in a business in South Africa.' },
+  { id: 6, name: 'Finance', icon: FinanceIcon, description: 'For individuals with sufficient financial resources to live in South Africa.' },
+  { id: 7, name: 'Refugee', icon: RefugeeIcon, description: 'For individuals seeking permanent residency under refugee status.' }
 ];
 
 const PermResidance = () => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from './Footer';
 import Popup from './Popup';
 import Form from './Form';
@@ -10,6 +11,11 @@ import Temp_Visa from './images/14571632_5484708.jpg';
 
 const Home = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handlePermResidenceClick = () => {
+    navigate('/permanent-residence');
+  };
 
   return (
     <div>
@@ -81,7 +87,7 @@ const Home = () => {
           <div className="perm-visa">
               <img src={Perm_Visa} alt="Passport"/>
               <p>Permanent Residence Permits</p>
-              <button>Permanent Residence Categories Here</button>
+              <button onClick={handlePermResidenceClick}>Permanent Residence Categories Here</button>
           </div>
           <div className="temp-visa">
             <img src={Temp_Visa} alt="SA Flag"/>

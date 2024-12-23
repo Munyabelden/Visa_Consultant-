@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import FloatingWhatsAppChat from './components/FloatingWhatsapp';
+import PermResidance from './components/PermRes';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/permanent-residence" element={<PermResidance />} />
         </Routes>
         <FloatingWhatsAppChat />
       </div>
