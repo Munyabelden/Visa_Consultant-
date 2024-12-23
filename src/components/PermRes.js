@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PermResidance.css'; // Import your styles
+import './styles/PermResidance.css';
 
 const categories = [
   { id: 1, name: 'Spouse', icon: './images/Spouse.png', description: 'Permanent residency for spouses of South African citizens or permanent residents.' },
@@ -16,9 +16,9 @@ const PermResidance = () => {
 
   const handleClick = (id) => {
     if (activeCategory === id) {
-      setActiveCategory(null); // Toggle off if clicked again
+      setActiveCategory(null);
     } else {
-      setActiveCategory(id); // Set active category on click
+      setActiveCategory(id);
     }
   };
 
