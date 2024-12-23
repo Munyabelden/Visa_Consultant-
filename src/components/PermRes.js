@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './Footer';
 import './styles/PermResidance.css';
 import SpouseIcon from './images/Spouse.png';
 import WorkIcon from './images/work.png';
@@ -30,6 +31,7 @@ const PermResidance = () => {
   };
 
   return (
+    <>
     <div className="perm-residance-container">
       <h2>South African Permanent Resident Categories</h2>
       <p>
@@ -65,6 +67,8 @@ const PermResidance = () => {
         ))}
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
