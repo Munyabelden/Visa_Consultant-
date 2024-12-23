@@ -54,9 +54,13 @@
   .values {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .home-about.about-p {
+    padding-inline: 20%;
+  }
 }
 
 .home-about.about-p {
-  padding-inline: 20%;
+  padding-inline: 10%;
 }
   
