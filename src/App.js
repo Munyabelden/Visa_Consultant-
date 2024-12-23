@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/Navbar'; // Adjust path as needed
+import NavBar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
-// import Contact from './components/Contact';
+import FloatingWhatsAppChat from './components/FloatingWhatsapp';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <FloatingWhatsAppChat />
       </div>
     </Router>
   );
