@@ -37,8 +37,8 @@ const Home = () => {
           <button className="contact-btn btn" onClick={() => setIsPopupOpen(true)}>Enquire</button>
         </div>
         <div className="home-about-imgs">
-          <img src={Image1} alt="beautiful waterfall" className="water-one"/>
-          <img src={Images2} alt="Beautiful bridge" className="water-two"/>
+          <img src={Image1} alt="beautiful waterfall" className="water-one" loading="lazy"/>
+          <img src={Images2} alt="Beautiful bridge" className="water-two" loading="lazy"/>
         </div>
       </section>
 
@@ -89,12 +89,12 @@ const Home = () => {
         <p>At Visionary Visa Consultant, we take the complexity out of your immigration process, whether it's for personal or corporate purposes. Our experienced team handles all the intricate paperwork, ensuring your application is accurate and stress-free. From the initial consultation to the moment your permit is approved, we are with you every step of the way. You can focus on planning your exciting new life in South Africa, while we navigate the legal and administrative aspects for you. Trust us to make your immigration journey smooth and hassle-free.</p>
         <div className="visa-categories">
           <div className="perm-visa">
-              <img src={Perm_Visa} alt="Passport"/>
+              <img src={Perm_Visa} alt="Passport" loading="lazy"/>
               <p>Permanent Residence Permits</p>
               <button onClick={handlePermResidenceClick}>Permanent Residence Categories Here</button>
           </div>
           <div className="temp-visa">
-            <img src={Temp_Visa} alt="SA Flag"/>
+            <img src={Temp_Visa} alt="SA Flag" loading="lazy"/>
             <p>Temporary Residence Visa</p>
             <button onClick={handleTempVisaClick}>Temporary Residence Categories Here</button>
           </div>

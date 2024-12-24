@@ -74,7 +74,7 @@ const TempVisa = () => {
               onClick={() => handleClick(category.id)}
             >
               <div className="icon-wrapper">
-                <img src={category.icon} alt={`${category.name} icon`} />
+                <img src={category.icon} alt={`${category.name} icon`}  loading="lazy" />
               </div>
               <h3>{category.name}</h3>
               <div className="description">
