@@ -54,13 +54,14 @@
   .values {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  .home-about.about-p {
-    padding-inline: 20%;
-  }
 }
 
 .home-about.about-p {
-  padding-inline: 10%;
+  padding-inline: 20%;
 }
-  
+
+@media (max-width: 800px) {
+  .home-about.about-p {
+    padding-inline: 10%;
+  }
+}
