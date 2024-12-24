@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import FloatingWhatsAppChat from './components/FloatingWhatsapp';
 import PermResidance from './components/PermRes';
+import TempVisa from './components/tempRes';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/permanent-residence" element={<PermResidance />} />
+          <Route path="/permanent-residence-visa" element={<PermResidance />} />
+          <Route path="/temporay-visa" element={<TempVisa />} />
         </Routes>
         <FloatingWhatsAppChat />
       </div>

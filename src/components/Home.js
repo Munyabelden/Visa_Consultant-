@@ -14,7 +14,11 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handlePermResidenceClick = () => {
-    navigate('/permanent-residence');
+    navigate('/permanent-residence-visa');
+  };
+
+  const handleTempVisaClick = () => {
+    navigate('/temporay-visa');
   };
 
   return (
@@ -92,7 +96,7 @@ const Home = () => {
           <div className="temp-visa">
             <img src={Temp_Visa} alt="SA Flag"/>
             <p>Temporary Residence Visa</p>
-            <button>Temporary Residence Categories Here</button>
+            <button onClick={handleTempVisaClick}>Temporary Residence Categories Here</button>
           </div>
         </div>
       </section>
