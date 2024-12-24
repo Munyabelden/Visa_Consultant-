@@ -1,4 +1,3 @@
-import Footer from './Footer';
 import ContactForm from './Form';
 import './styles/Contact.css';
 

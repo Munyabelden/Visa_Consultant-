@@ -1,4 +1,3 @@
-import Footer from './Footer';
 import './styles/About.css';
 import Image1 from './images/1082.jpg';
 import Image2 from './images/2333.jpg';

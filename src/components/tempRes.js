@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
 import './styles/PermResidance.css';
 import SpouseIcon from './images/Spouse.png';
 import WorkIcon from './images/work.png';
