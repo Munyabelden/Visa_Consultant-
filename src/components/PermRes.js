@@ -67,7 +67,6 @@ const PermResidance = () => {
         ))}
       </div>
     </div>
-    <Footer />
     </>
   );
 };

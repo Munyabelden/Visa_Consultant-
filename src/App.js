@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import FloatingWhatsAppChat from './components/FloatingWhatsapp';
 import PermResidance from './components/PermRes';
 import TempVisa from './components/tempRes';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/temporay-visa" element={<TempVisa />} />
         </Routes>
         <FloatingWhatsAppChat />
+        <Footer />
       </div>
     </Router>
   );

@@ -40,7 +40,6 @@ const About = () => {
           <img src={Image2} alt="Beautiful girl" className="water-two"/>
         </div>
       </section>
-      <Footer />
     </div>
   )
 }

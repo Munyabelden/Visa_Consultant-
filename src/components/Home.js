@@ -101,8 +101,6 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer />
-
       {/* Popup Component with Contact Form */}
       <Popup trigger={isPopupOpen} setTrigger={setIsPopupOpen}>
         <Form />

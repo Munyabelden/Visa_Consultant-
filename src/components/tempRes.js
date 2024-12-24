@@ -84,7 +84,6 @@ const TempVisa = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 };
