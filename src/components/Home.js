@@ -47,37 +47,31 @@ const Home = () => {
           <div className="country uk">
             <div>
               <span>United Kingdom</span>
-              <button className="country-btn">more info</button>
             </div>
           </div>
           <div className="country usa">
             <div>
               <span>USA</span>
-              <button className="country-btn">more info</button>
             </div>
           </div>
           <div className="country can">
             <div>
               <span>Canada</span>
-              <button className="country-btn">more info</button>
             </div>
           </div>
           <div className="country aust">
             <div>
               <span>Australia</span>
-              <button className="country-btn">more info</button>
             </div>
           </div>
           <div className="country nz">
             <div>
               <span>New Zealand</span>
-              <button className="country-btn">more info</button>
             </div>
           </div>
           <div className="country fran">
             <div>
               <span>France</span>
-              <button className="country-btn">more info</button>
             </div>
           </div>
         </div>
