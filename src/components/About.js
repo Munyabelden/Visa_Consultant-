@@ -31,7 +31,7 @@ const About = () => {
       <section className="home-about about-p">
         <div className="about-intro">
           <h2>About Us<br></br> <span>Who We Are</span></h2>
-          <p>Welcome to Visionary Visa Consultanting! We’re here to help make getting your visa simple, whether you’re traveling within South Africa or heading to exciting international destinations. From quick advice to handling the entire visa process, we’re all about making sure you’re ready for your next adventure. Let us take the stress out of the paperwork so you can focus on planning the fun stuff. Ready to explore the world? We've got your back!</p>
+          <p>Welcome to Visionary Visa Consultant! We’re here to help make getting your visa simple, whether you’re traveling within South Africa or heading to exciting international destinations. From quick advice to handling the entire visa process, we’re all about making sure you’re ready for your next adventure. Let us take the stress out of the paperwork so you can focus on planning the fun stuff. Ready to explore the world? We've got your back!</p>
           <button className="contact-btn btn">Enquire</button>
         </div>
         <div className="home-about-imgs abt">

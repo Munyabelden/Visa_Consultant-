@@ -10,14 +10,14 @@ const NavBar = () => {
   return (
     <nav className="navigation">
       <div className="primary-details">
-        <p>Get in touch with a consultant +27 78 976 6554</p>
+        <p>Get in touch with a consultant +27 72 066 3578</p>
         <ul className="trading-hours">
           <li>Trading Hours:</li>
           <li>Mon - Fri: 08:00 - 17:00</li>
           <li>Closed during weekends</li>
         </ul>
         <span className="email">
-          <strong>info@visionaryvisaconsultant.co.za</strong>
+          <strong>info@visionaryvisaconsultation.co.za</strong>
         </span>
         <button className="contact-btn" onClick={() => setIsPopupOpen(true)}>Book an appointment</button>
       </div>

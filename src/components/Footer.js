@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 Visionary Visa Consulting. All rights reserved.</p>
+        <p>&copy; 2024 Visionary Visa Consultant. All rights reserved.</p>
         <p>by Nate~Mel</p>
       </div>
     </div>
