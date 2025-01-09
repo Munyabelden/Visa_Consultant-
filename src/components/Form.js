@@ -12,6 +12,7 @@ const ContactForm = () => {
 
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("xannyddb");
 
   const validateForm = () => {
     const errors = {};
@@ -38,12 +39,13 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
     const errors = validateForm();
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
+      handleSubmit(e);
       setIsSubmitted(true);
     } else {
       setIsSubmitted(false);
@@ -52,10 +54,10 @@ const ContactForm = () => {
 
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <h2>Contact Us</h2>
 
-        {isSubmitted && <p className="success">Form submitted successfully!</p>}
+        {isSubmitted && state.succeeded && <p className="success">Form submitted successfully!</p>}
 
         <table className="form-table">
           <tbody>
@@ -69,6 +71,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className={formErrors.name ? "invalid" : ""}
                 />
+                <ValidationError field="name" prefix="Name" errors={state.errors} />
                 {formErrors.name && <p className="error">{formErrors.name}</p>}
               </td>
             </tr>
@@ -82,6 +85,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className={formErrors.email ? "invalid" : ""}
                 />
+                <ValidationError field="email" prefix="Email" errors={state.errors} />
                 {formErrors.email && <p className="error">{formErrors.email}</p>}
               </td>
             </tr>
@@ -107,12 +111,15 @@ const ContactForm = () => {
                   onChange={handleChange}
                   className={formErrors.message ? "invalid" : ""}
                 />
+                <ValidationError field="message" prefix="Message" errors={state.errors} />
                 {formErrors.message && <p className="error">{formErrors.message}</p>}
               </td>
             </tr>
             <tr>
               <td colSpan="2" className="submit-row">
-                <button type="submit">Submit</button>
+                <button type="submit" disabled={state.submitting}>
+                  Submit
+                </button>
               </td>
             </tr>
           </tbody>
